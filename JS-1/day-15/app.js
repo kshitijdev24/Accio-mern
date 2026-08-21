@@ -54,3 +54,24 @@ for (let item in obj) {
 for (let item in obj) {
     console.log(obj[item])
 }
+
+//key-value pairs
+for (let item in obj) {
+    console.log(obj,obj[item])
+}
+
+//shortHand to create object
+//(here variable name becomes key and value becomes value)
+let score = 10
+let match = 20
+let win = true
+
+let obj1 = { score, match, win }
+console.log(obj1)
+
+
+// how to create custom key name in shorthand
+let obj2 = { score, matchScore: match, win }
+console.log(obj2)
+delete obj2.score;
+console.log(obj2)
