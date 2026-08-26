@@ -11,3 +11,18 @@ for (let item of arr) {
 }
 
 console.log(obj)
+
+//------------------------------------------
+let arr1="aaabccdedcebabdec"
+let obj1 = {}
+
+for (let item of arr1) {
+    if (obj1[item]) {
+        obj1[item] = obj1[item] + 1
+    }
+    else {
+        obj1[item] = 1
+    }
+}
+
+console.log(obj1)
